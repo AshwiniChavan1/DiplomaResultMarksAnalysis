@@ -33,6 +33,7 @@ dt = {"title": "DIGITAL TECHNIQUES", "percent_label": "DT %", "pf_label": "DT"}
 
 subjects = [oop, dsc, cg, dms, dt]
 
+
 xl_path = "D:\\repos\\python\\polytechnic-marks-auto\\output.xlsx"
 
 polytechnic_url = "https://msbte.org.in/pcwebBTRes/pcResult01/pcfrmViewMSBTEResult.aspx"
