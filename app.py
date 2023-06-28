@@ -114,13 +114,6 @@ def get_results(driver: webdriver.Chrome) -> dict:
         percent = grid.find_element(By.XPATH, obt_percent_xpath(rownum)).text
         percent = re.findall("[0-9]+",percent)[0].lstrip("0")
         percent = percent if percent!='' else '0'
-        # percent = (
-        #     grid.find_element(By.XPATH, obt_percent_xpath(rownum))
-        #     .text.lstrip()
-        #     .rstrip()
-        #     .rstrip("*")
-        #     .lstrip("0")
-        # )
         result[subject["pf_label"]] = "PASS" if int(percent) >= 28 else "FAIL"
         result[subject["percent_label"]] = percent
     return result
